@@ -1,0 +1,42 @@
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-darkblue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --primary-white: #fafafa;
+  --neutral-darkgreen: hsl(153, 38%, 54%);
+
+  --primary-font: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--primary-red);
+  background-image: url("./images/bg-intro-mobile.png");
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 375px;
+  padding: 0rem 1.5rem;
+}
+
+.container1 {
+  color: var(--primary-white);
+  text-align: center;
+}
+
+.container1 h1 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.container1 p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
