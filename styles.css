@@ -4,8 +4,10 @@
   --accent-blue: hsl(248, 32%, 49%);
   --neutral-darkblue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
-  --primary-white: #fafafa;
   --neutral-darkgreen: hsl(153, 38%, 54%);
+  --primary-white: #fafafa;
+  --neutral-gray: #aaaaaa;
+  --primary-black: #222222;
 
   --primary-font: "Poppins", sans-serif;
 }
@@ -32,8 +34,8 @@ main {
 
 .container1 h1 {
   font-size: 1.4rem;
-  margin-top: 2rem;
-  padding: 1rem;
+  margin-top: 5rem;
+  padding: 0 1rem;
 }
 
 .container1 p {
@@ -51,7 +53,7 @@ main {
   background-color: var(--accent-blue);
   color: var(--primary-white);
   padding: 1rem 5rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   border-radius: 10px;
   text-align: center;
   line-height: 1.5rem;
@@ -75,9 +77,15 @@ main {
 
 form input {
   padding: 1.2rem;
-  border: 1px solid #aaaaaa;
+  border: 1px solid var(--neutral-gray);
   border-radius: 5px;
+  font-size: 0.8rem;
   font-weight: bold;
+  color: var(--neutral-darkblue);
+}
+
+form input:focus {
+  outline-color: var(--accent-blue);
 }
 
 form button {
@@ -89,7 +97,8 @@ form button {
   border: none;
   cursor: pointer;
   box-shadow: inset 0 -4px var(--neutral-darkgreen);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 form button:active {
@@ -100,4 +109,41 @@ form button:active {
 
 form button:focus {
   outline: none;
+}
+
+form small {
+  font-size: 0.7rem;
+  padding: 0 1rem;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+small a {
+  font-weight: bold;
+  color: var(--primary-red);
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  margin-bottom: 0;
+  height: 2rem;
+  font-size: 0.9rem;
+  padding: 1rem 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-red);
+  font-weight: bold;
+}
+
+#name {
+  color: var(--primary-green);
 }
