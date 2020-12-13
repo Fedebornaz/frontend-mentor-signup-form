@@ -176,6 +176,15 @@ footer a:hover {
   color: var(--primary-green);
 }
 
+.errors {
+  background-color: var(--primary-red);
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--accent-blue-shadow);
+  transition: all 0.2s ease;
+}
+
 @media (min-width: 376px) {
   main {
     max-width: 100%;
